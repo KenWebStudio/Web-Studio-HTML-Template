@@ -64,6 +64,22 @@ section {
   margin-bottom: 1.85rem;
 }
 
+section:has(aside) {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-areas: "content content content sidebar";
+}
+
+article {
+  grid-area: content;
+  /* background-color: rgba(var(--rgb-primary), 15%); */
+}
+
+aside {
+  grid-area: sidebar;
+  /* background-color: rgba(var(--rgb-secondary), 15%); */
+}
+
 img,
 picture,
 video,
