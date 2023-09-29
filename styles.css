@@ -166,7 +166,7 @@ header > * {
 
 main {
   width: 1366px;
-  max-width: 100vw;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding: 1rem 2rem;
@@ -190,6 +190,44 @@ article {
 
 aside {
   grid-area: sidebar;
+}
+
+footer {
+  color: var(--use-white);
+  background-color: var(--use-primary);
+}
+
+footer div {
+  padding: 1rem 2rem;
+}
+
+footer .info {
+  max-width: 45%;
+}
+
+footer .info a {
+  width: 315px;
+  max-width: 90%;
+  display: inline-block;
+  background-color: var(--use-white);
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+}
+
+footer a,
+footer .bottom a {
+  color: inherit;
+  text-decoration: none;
+}
+
+footer .bottom {
+  background-color: rgba(var(--rgb-black), 25%);
+  padding: 0.5rem 2rem;
+}
+
+footer .bottom a {
+  font-weight: bold;
 }
 
 /* Media Queries */
