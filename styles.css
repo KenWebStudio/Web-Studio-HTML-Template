@@ -181,3 +181,21 @@ li > ul li,
 li > ol li {
   margin-bottom: 0;
 }
+
+/* Media Queries */
+/* Phone Landscape ~~ 855px */
+@media screen and (max-width: 855px) {
+  section:has(aside) {
+    display: block;
+    grid-gap: unset;
+    grid-template-areas: none;
+  }
+}
+
+/* Phone ~~ 768px */
+@media screen and (max-width: 768px) {
+}
+
+/* Small Phone ~~ 515px */
+@media screen and (max-width: 515px) {
+}
