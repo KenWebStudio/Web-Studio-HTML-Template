@@ -72,12 +72,10 @@ section:has(aside) {
 
 article {
   grid-area: content;
-  /* background-color: rgba(var(--rgb-primary), 15%); */
 }
 
 aside {
   grid-area: sidebar;
-  /* background-color: rgba(var(--rgb-secondary), 15%); */
 }
 
 img,
