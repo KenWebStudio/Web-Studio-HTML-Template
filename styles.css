@@ -60,14 +60,15 @@ main {
   isolation: isolate;
 }
 
-section {
-  margin-bottom: 1.85rem;
-}
-
 section:has(aside) {
   display: grid;
   grid-gap: 1rem;
   grid-template-areas: "content content content sidebar";
+}
+
+article,
+aside {
+  margin-bottom: 1.85rem;
 }
 
 article {
