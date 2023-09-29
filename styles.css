@@ -1,0 +1,168 @@
+/* Imports & Resets */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300;1,400;1,700;1,800&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+/* EOL ~~ Imports & Resets */
+
+/* Variables */
+:root {
+  /* Colors ~~ rgb values */
+  --rgb-black: 0, 0, 0;
+  --rgb-white: 255, 255, 255;
+  --rgb-primary: 63, 169, 245;
+  --rgb-secondary: 255, 47, 52;
+  --rgb-tertiary: 255, 184, 20;
+
+  /* Colors ~~ usable */
+  --use-black: rgb(var(--rgb-black));
+  --use-white: rgb(var(--rgb-white));
+  --use-primary: rgb(var(--rgb-primary));
+  --use-secondary: rgb(var(--rgb-secondary));
+  --use-tertiary: rgb(var(--rgb-tertiary));
+
+  /* Fonts & Typography */
+  --font-primary-family: "Open Sans", sans-serif;
+  --font-regular: 16px;
+  --font-h1: 32px;
+  --font-h2: calc(var(--font-h1) / 1.15);
+  --font-h3: calc(var(--font-h2) / 1.15);
+  --font-h4: calc(var(--font-h3) / 1.15);
+  --font-h5: calc(var(--font-h4) / 1.15);
+  --font-h6: calc(var(--font-h5) / 1.15);
+
+  /* ETC. */
+  --transition: all 150ms linear;
+}
+/* EOL ~~ Variables */
+
+body {
+  color: var(--use-black);
+  font-family: var(--font-primary-family);
+  font-size: var(--font-regular);
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+}
+
+main {
+  width: 1366px;
+  max-width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem 2rem;
+  isolation: isolate;
+}
+
+section {
+  margin-bottom: 1.85rem;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--use-primary);
+  filter: brightness(66.67%);
+  margin-bottom: 0.6667rem;
+  overflow-wrap: break-word;
+}
+
+h1 {
+  font-size: var(--font-h1);
+}
+
+h2 {
+  font-size: var(--font-h2);
+}
+
+h3 {
+  font-size: var(--font-h3);
+}
+
+h4 {
+  font-size: var(--font-h4);
+}
+
+h5 {
+  font-size: var(--font-h5);
+}
+
+h6 {
+  font-size: var(--font-h6);
+}
+
+/* <p> ~~ Paragraph element  */
+p {
+  overflow-wrap: break-word;
+}
+
+p:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+/* <a> ~~ Anchor element */
+a {
+  color: rgba(var(--rgb-secondary), 75%);
+  transition: var(--transition);
+}
+
+a:focus,
+a:hover {
+  color: rgba(var(--rgb-secondary), 100%);
+}
+
+/* <blockquote> ~~ Blockquote element */
+blockquote {
+  font-style: italic;
+  padding: 1rem 1.5rem;
+  background-color: rgba(var(--rgb-primary), 8%);
+  position: relative;
+}
+
+blockquote::before {
+  content: "";
+  display: block;
+  background-color: rgb(var(--rgb-primary));
+  /* background-color: var(--color-primary); */
+  height: 100%;
+  width: 0.25rem;
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+}
+
+/* Unordered & Ordered list element */
+ul li,
+ol li {
+  margin-bottom: 0.45rem;
+}
+
+li > ul li,
+li > ol li {
+  margin-bottom: 0;
+}
